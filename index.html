@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Друзья</title>
+
+    <h1>Деньги на пожертвования сюда: +79966131537</h1>
 </head>
 <body>
     <div class="container">
@@ -33,6 +35,14 @@
                 transform: rotate(359deg);
             }
         }
+        @keyframes rotation-revers {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(-359deg);
+            }
+        }
         
         .spin {
             display: inline-block;
@@ -40,6 +50,16 @@
             width: 50vh;
             height: 50vh;
             animation: rotation 3s infinite linear;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .spin-revers {
+            display: inline-block;
+            /* font-size: 500px; */
+            width: 50vh;
+            height: 50vh;
+            animation: rotation-revers 3s infinite linear;
             cursor: pointer;
             margin-bottom: 20px;
         }
